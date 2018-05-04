@@ -1,0 +1,17 @@
+{
+    "editor.fontFamily": "RictyNerdFontForPowerline-Regular",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 14,
+    "C_Cpp.clang_format_path": "/usr/local/bin/clang-format",
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Dracula",
+    "python.disablePromptForFeatures": [
+        "pylint"
+    ],
+    "python.pythonPath": "/Users/imperator/.pyenv/versions/anaconda3-4.4.0/envs/tf/bin/python",
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish"
+}
+
