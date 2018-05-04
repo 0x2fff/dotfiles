@@ -1,0 +1,68 @@
+/* set default namespace to XUL */
+@charset "utf-8";
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+
+/* サイドバーの幅の調節範囲を 0からブラウザの幅までに広げる */
+#sidebar-box {
+    overflow-x: hidden !important;
+}
+#sidebar {
+    min-width: 0px !important;
+    max-width: none !important;
+    overflow-x: hidden !important;
+}
+
+/* サイドバーの検索ボックスを非表示にする */
+#sidebar-box  sidebarheader {
+    display: none !important;
+}
+
+#sidebar-splitter {
+  border-right: none !important;
+}
+
+#bookmarksPanel #search-box {
+    display: none !important;
+}
+
+#history-panel #search-box {
+    display: none !important;
+}
+
+#menu_unsortedBookmarks header{
+    display: none !important;
+}
+#bookmarksPanel scrollbar {
+    display:none !important;
+}
+
+#bookmarksPanel label[control="search-box"],
+#history-panel label[control="search-box"],
+#viewButton > hbox > hbox > label {
+    display: none !important;
+}
+
+/* ブックマークフォルダを展開するアイコンを非表示にする */
+@-moz-document
+    url(chrome://browser/content/bookmarks/bookmarksPanel.xul),
+    url(chrome://browser/content/history/history-panel.xul) {
+        treechildren::-moz-tree-twisty {
+          -moz-appearance: none !important;
+          padding-right: 0px !important;
+          padding-top: 0px !important;
+          width: 0px !important;
+          list-style-image: none !important;
+    }
+}
+
+.windowDialog, tree, #BrowserPreferences, prefwindow,
+#extensionsManager, .viewGroupWrapper,
+menupopup > *,popup > *,page > *,splitter > *,dialog > * {
+    background-color: #404050 !important;
+    color: #E0E0E0 !important;
+}
+
+#bookmarksPanel treechildren {
+    color: #404050 !important;
+}
